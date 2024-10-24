@@ -1,0 +1,86 @@
+[
+    {
+        "name": "MD. HASHIBUL ISLAM TANIM",
+        "phone_number": "01925942758",
+        "email": null,
+        "imgSource": "img/tanim.jpeg"
+    },
+    {
+        "name": "MD. SAJIDUR RAHMAN TALHA",
+        "phone_number": "01972707104",
+        "email": "talha2008srt@gmail.com",
+        "imgSource": ""
+    },
+    {
+        "name": "MD. HASIBUL ISLAM",
+        "phone_number": "01972158685",
+        "email": "hmhasibul48@gmail.com",
+        "imgSource": "img/hasibul.jpeg"
+    },
+    {
+        "name": "MD. FAHIM UDDIN",
+        "phone_number": "01778906174",
+        "email": "imfahimuddin01778@gmail.com",
+        "imgSource": "img/fahim.jpeg"
+    },
+    {
+        "name": "MD. MAHFUJUL HASAN JUNAID",
+        "phone_number": "01761801345",
+        "email": "mahfuzulhasanjunaid@gmail.com",
+        "imgSource": "img/junaid.jpeg"
+    },
+    {
+        "name": "MD. SHIHAB UDDIN",
+        "phone_number": "01600221950",
+        "email": null,
+        "imgSource": "img/shihab.jpeg"
+    },
+    {
+        "name": "MD. KHALID BIN WALID",
+        "phone_number": "01611640099",
+        "email": "asgaminfahim@gmail.com",
+        "imgSource": "img/khalid.jpeg"
+    },
+    {
+        "name": "MD. ABID HOSSAIN",
+        "phone_number": "01721653165",
+        "email": null,
+        "imgSource": ""
+    },
+    {
+        "name": "MD. ABDULLAH SIKDAR",
+        "phone_number": "01620939347",
+        "email": null,
+        "imgSource": ""
+    },
+    {
+        "name": "MD. ABDULLAH KHAIRUL ISLAM AKIL",
+        "phone_number": "01708333593",
+        "email": "abdullahkhairulislamaqil@gmail.com",
+        "imgSource": "img/aqil.jpeg"
+    },
+    {
+        "name": "MD. AMINUL ISLAM JIHAD",
+        "phone_number": "01816043266",
+        "email": "jarifabdullah985@gmail.com",
+        "imgSource": "img/jihad.jpeg"
+    },
+    {
+        "name": "MD. ARAFAT SHEIKH NAIM",
+        "phone_number": "01624491781",
+        "email": "sheikharafat2006@gmail.com",
+        "imgSource": "img/Sheikh.jpeg"
+    },
+    {
+        "name": "MD. ARAFAT NAIM",
+        "phone_number": "01907926157",
+        "email": "arafatnaim220@gmail.com",
+        "imgSource": "img/naim.jpeg"
+    },
+    {
+        "name": "MD. TANVIRUL ISLAM ARAFAT",
+        "phone_number": "01701419381",
+        "email": "tanvirbir100@gmail.com",
+        "imgSource": "img/tanvir.jpeg"
+    }
+]

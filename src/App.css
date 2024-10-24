@@ -1,0 +1,35 @@
+body {
+    background-color: #15150B;
+    color: white;
+}
+
+/* Navbar Active class */
+.active {
+    background-color: #2CAC00;
+
+}
+
+.headerImg {
+    border-radius: 47% 53% 40% 60% / 30% 43% 57% 70%;
+
+    /* Animatons for it */
+    animation-name: imageFly;
+    animation-duration: 4s;
+    animation-timing-function: none;
+    animation-iteration-count: infinite;
+}
+
+/* Animatons for it */
+@keyframes imageFly {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-7px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
