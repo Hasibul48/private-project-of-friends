@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import './lightbox.css'
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
 import Home from './Pages/Home'
