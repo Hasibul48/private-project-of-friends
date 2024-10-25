@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 function GalleryComponent() {
 
@@ -9,7 +9,17 @@ function GalleryComponent() {
         'img/gallery/img4.jpg',
         'img/gallery/img5.jpg',
         'img/gallery/img6.jpg',
-        'img/gallery/img7.jpg'
+        'img/gallery/img7.jpg',
+        'img/gallery/img8.jpg',
+        'img/gallery/img9.jpg',
+        'img/gallery/img10.jpg',
+        'img/gallery/img11.jpg',
+        'img/gallery/img12.jpg',
+        'img/gallery/img13.jpg',
+        'img/gallery/img14.jpg',
+        'img/gallery/img15.jpg',
+        'img/gallery/img16.jpg',
+        'img/gallery/img17.jpg',
     ];
     return (
         <div className='container mx-auto mt-24'>

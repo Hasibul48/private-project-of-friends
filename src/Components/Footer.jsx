@@ -9,7 +9,7 @@ function FooterComponent() {
             <div className="w-full">
                 <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
                     <div className='mb-5 md:mb-0'>
-                        <Link to={'/'}><h4 className='font-thin text-md md:text-lg'>
+                        <Link to={'/'}><h4 className='font-thin text-sm md:text-lg'>
                             <span className='bg-gradient-to-r text-xl from-indigo-600 via-blue-800 to-pink-700 text-white px-3 rounded-xl py-1 font-semibold'>
                                 Dakhil 2025
                             </span>

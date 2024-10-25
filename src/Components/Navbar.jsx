@@ -13,7 +13,7 @@ function Navbar() {
             <div className='border-b-4 border-themeColor'>
                 <div className="container mx-auto flex justify-between items-center py-2 px-4">
                     <Link to={'/'}>
-                        <h1 className='font-thin text-md md:text-lg'>
+                        <h1 className='font-thin text-sm md:text-lg'>
                             <span className='bg-gradient-to-r text-xl from-indigo-600 via-blue-800 to-pink-700 text-white px-3 rounded-xl py-1 font-semibold'>
                                 Dakhil 2025
                             </span>
