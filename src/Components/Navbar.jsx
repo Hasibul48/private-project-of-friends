@@ -15,7 +15,7 @@ function Navbar() {
                     <Link to={'/'}>
                         <h1 className='font-thin text-md md:text-lg'>
                             <span className='bg-gradient-to-r text-xl from-indigo-600 via-blue-800 to-pink-700 text-white px-3 rounded-xl py-1 font-semibold'>
-                                Class 10
+                                Dakhil 2025
                             </span>
                             Jabal-e-Noor Dakhil Madrasah
                         </h1>

@@ -9,7 +9,12 @@ function FooterComponent() {
             <div className="w-full">
                 <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
                     <div className='mb-5 md:mb-0'>
-                        <Link to={'/'}><h1 className='font-thin text-2xl m-3 md:m-0'><span className='bg-gradient-to-r from-indigo-600 via-blue-800 to-pink-700 text-white px-3 rounded-xl py-1 font-semibold'>Class 10</span>Jabal-e-Noor Dakhil Madrasah</h1></Link>
+                        <Link to={'/'}><h4 className='font-thin text-md md:text-lg'>
+                            <span className='bg-gradient-to-r text-xl from-indigo-600 via-blue-800 to-pink-700 text-white px-3 rounded-xl py-1 font-semibold'>
+                                Dakhil 2025
+                            </span>
+                            Jabal-e-Noor Dakhil Madrasah
+                        </h4></Link>
                     </div>
                     <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
                         <div>
