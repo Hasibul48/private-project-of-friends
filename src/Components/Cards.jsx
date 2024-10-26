@@ -19,7 +19,7 @@ function Cards() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
                     {
-                        stdData.map(item => <SingleCard key={item.name} name={item.name} phnNum={item.phone_number} email={item.email} img={item.imgSource} />)
+                        stdData.map(item => <SingleCard key={item.name} name={item.name} phnNum={item.phone_number} email={item.email} img={item.imgSource} facebook={item.facebookProfile} />)
                     }
                 </div>
             </div>
