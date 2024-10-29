@@ -18,7 +18,7 @@ function SingleCard({ name, phnNum, email, img, facebook }) {
             </p>
             <Button onClick={() => {
                 window.open(facebook)
-            }} className='mt-3' color="blue" pill>
+            }} className={`mt-3 ${!facebook ? "opacity-25 pointer-events-none" : null}`} color="blue" pill>
                 <BsFacebook className='mr-2 mt-1' /> Facebook
             </Button>
         </Card>
