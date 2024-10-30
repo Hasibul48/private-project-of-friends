@@ -30,6 +30,9 @@ function GalleryComponent() {
         'img/gallery/img25.jpeg',
         'img/gallery/img26.jpeg',
         'img/gallery/img27.jpeg',
+        'img/gallery/img28.jpeg',
+        'img/gallery/img29.jpeg',
+        'img/gallery/img30.jpeg',
     ];
     return (
         <div className='container mx-auto mt-24'>
