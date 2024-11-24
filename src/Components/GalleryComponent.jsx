@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useState } from "react";
+import { FaArrowLeft, FaArrowRight, FaTimes, FaDownload } from "react-icons/fa";
 
 function GalleryComponent() {
-
     const imgURL = [
         'img/gallery/img1.jpg',
         'img/gallery/img2.jpg',
@@ -34,21 +34,108 @@ function GalleryComponent() {
         'img/gallery/img29.jpeg',
         'img/gallery/img30.jpeg',
     ];
+
+    const [currentIndex, setCurrentIndex] = useState(null);
+
+    const openLightbox = (index) => {
+        setCurrentIndex(index);
+    };
+
+    const closeLightbox = () => {
+        setCurrentIndex(null);
+    };
+
+    const showNextImage = () => {
+        setCurrentIndex((currentIndex + 1) % imgURL.length);
+    };
+
+    const showPrevImage = () => {
+        setCurrentIndex((currentIndex - 1 + imgURL.length) % imgURL.length);
+    };
+
+    const downloadImage = () => {
+        const a = document.createElement("a");
+        a.href = imgURL[currentIndex];
+        a.download = `Image_${currentIndex + 1}.jpg`;
+        a.click();
+    };
+
     return (
-        <div className='container mx-auto mt-24'>
-            <h2 className='text-center font-handWriting md:text-5xl text-4xl tracking-wider md:pb-14 pb-6'>Image Gallery</h2>
-            <div className="imgWrapper mt-10 px-6 md:px-0 grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-7">
+        <div className="container mx-auto mt-24">
+            <h2 className="text-center font-handWriting md:text-5xl text-4xl tracking-wider md:pb-14 pb-6">
+                Image Gallery
+            </h2>
 
-                {
-                    imgURL.map(url => <a href={url}>
-                        <img className='rounded-2xl shadow-md shadow-themeColor' src={url} alt="Image not found!" />
-                    </a>)
-                }
-
-
+            {/* Gallery Grid */}
+            <div className="imgWrapper mt-10 px-6 md:px-0 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7">
+                {imgURL.map((url, index) => (
+                    <img
+                        key={index}
+                        className="rounded-2xl shadow-md shadow-themeColor cursor-pointer object-cover w-full h-auto"
+                        src={url}
+                        alt={`Gallery ${index + 1}`}
+                        onClick={() => openLightbox(index)}
+                    />
+                ))}
             </div>
+
+            {/* Lightbox */}
+            {currentIndex !== null && (
+                <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black bg-opacity-80">
+                    {/* Close Button */}
+                    <button
+                        className="absolute top-5 right-5 text-white text-3xl"
+                        onClick={closeLightbox}
+                    >
+                        <FaTimes />
+                    </button>
+
+                    {/* Image Counter */}
+                    <div className="absolute top-5 left-5 text-white text-lg">
+                        {currentIndex + 1}/{imgURL.length}
+                    </div>
+
+                    {/* Image Display */}
+                    <img
+                        src={imgURL[currentIndex]}
+                        alt={`Lightbox ${currentIndex + 1}`}
+                        className="max-w-full max-h-screen rounded-lg"
+                    />
+
+                    {/* Download Button */}
+                    <button
+                        className="absolute bottom-20 text-white text-2xl bg-themeColor p-2 rounded-full hover:bg-opacity-90"
+                        onClick={downloadImage}
+                    >
+                        <FaDownload />
+                    </button>
+
+                    {/* Navigation Buttons */}
+                    <div className="w-full flex justify-between items-center mt-4 md:mt-8">
+                        {/* For Large Screens (Buttons on Image Level) */}
+                        <button
+                            className={`${window.innerWidth >= 1024
+                                ? "absolute left-5 top-1/2 transform -translate-y-1/2"
+                                : "relative mt-4"
+                                } text-white text-3xl bg-gray-700 p-3 rounded-full hover:bg-gray-600`}
+                            onClick={showPrevImage}
+                        >
+                            <FaArrowLeft />
+                        </button>
+                        <button
+                            className={`${window.innerWidth >= 1024
+                                ? "absolute right-5 top-1/2 transform -translate-y-1/2"
+                                : "relative mt-4"
+                                } text-white text-3xl bg-gray-700 p-3 rounded-full hover:bg-gray-600`}
+                            onClick={showNextImage}
+                        >
+                            <FaArrowRight />
+                        </button>
+                    </div>
+                </div>
+            )}
         </div>
-    )
+    );
 }
 
-export default GalleryComponent
+export default GalleryComponent;
