@@ -2,9 +2,38 @@ import React, { useState, useEffect } from "react";
 import { FaArrowLeft, FaArrowRight, FaTimes, FaDownload } from "react-icons/fa";
 
 function GalleryComponent() {
-    const imgURL = Array.from({ length: 30 }, (_, i) =>
-        `img/gallery/img${i + 1}.${i >= 17 ? "jpeg" : "jpg"}`
-    );
+    const imgURL = [
+        'img/gallery/img1.jpg',
+        'img/gallery/img2.jpg',
+        'img/gallery/img3.jpg',
+        'img/gallery/img4.jpg',
+        'img/gallery/img5.jpg',
+        'img/gallery/img6.jpg',
+        'img/gallery/img7.jpg',
+        'img/gallery/img8.jpg',
+        'img/gallery/img9.jpg',
+        'img/gallery/img10.jpg',
+        'img/gallery/img11.jpg',
+        'img/gallery/img12.jpg',
+        'img/gallery/img13.jpg',
+        'img/gallery/img14.jpg',
+        'img/gallery/img15.jpg',
+        'img/gallery/img16.jpg',
+        'img/gallery/img17.jpg',
+        'img/gallery/img18.jpeg',
+        'img/gallery/img19.jpeg',
+        'img/gallery/img20.jpeg',
+        'img/gallery/img21.jpeg',
+        'img/gallery/img22.jpeg',
+        'img/gallery/img23.jpeg',
+        'img/gallery/img24.jpeg',
+        'img/gallery/img25.jpeg',
+        'img/gallery/img26.jpeg',
+        'img/gallery/img27.jpeg',
+        'img/gallery/img28.jpeg',
+        'img/gallery/img29.jpeg',
+        'img/gallery/img30.jpeg',
+    ];
 
     const [currentIndex, setCurrentIndex] = useState(null);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
