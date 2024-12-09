@@ -43,7 +43,7 @@ function FooterComponent() {
                 <Footer.Divider />
                 <div className="">
 
-                    <p className='text-center'>Copyright 2024 all rights reserved | Made by <Link className='text-yellow-300' to={'http://hmhasibul.netlify.app'}>Hasibul Islam</Link></p>
+                    <p className='text-center'>Copyright 2024 all rights reserved | Made by <Link className='text-yellow-300' to={'http://hmhasibul.vercel.app'}>Hasibul Islam</Link></p>
                 </div>
             </div>
         </Footer>
